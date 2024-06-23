@@ -14,3 +14,7 @@ app.use('/', createProxyMiddleware({
 app.listen(PORT, () => {
     console.log(`Proxy server is running on port ${PORT}`);
 });
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
