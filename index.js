@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 console.log("Start proxy server");
 
 app.use('/', createProxyMiddleware({
-    target: 'https://www.example.com', // Change target URL here
+    target: 'https://www.google.com', // Change target URL here
     changeOrigin: true,
 }));
 
